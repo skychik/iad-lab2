@@ -1,0 +1,23 @@
+body {
+    background-image: url("../images/background.jpg");
+    font-family: Verdana, Arial, Helvetica, sans-serif; /* Семейство шрифта */
+    color: #336; /* Цвет текста */
+    font-size: 150%;
+}
+
+table {
+    text-align: center;
+    border: 4px double black; /* Рамка вокруг таблицы */
+    border-collapse: collapse; /* Отображать только одинарные линии */
+    border-collapse: separate;
+    font-size: 150%;
+}
+
+td {
+    padding: 5px; /* Поля вокруг содержимого ячеек */
+    border: 1px solid black; /* Граница вокруг ячеек */
+}
+
+p {
+    color: #ff0000;
+}

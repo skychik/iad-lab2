@@ -1,0 +1,62 @@
+body {
+    background-image: url("../images/background.jpg");
+    font-family: Verdana, Arial, Helvetica, sans-serif; /* Семейство шрифта */
+    color: #336; /* Цвет текста */
+}
+
+table {
+    text-align: center;
+    border: 0;
+    border-spacing: 0;
+    width: 100%;
+}
+
+tr:first-child {
+    padding-left: 2%;
+    width: 20px;
+}
+
+td.left_align {
+    text-align: left;
+}
+
+td > img {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+marquee {
+    font-size: 150%; /* Размер шрифта */
+}
+
+select {
+    margin-left: 3%;
+}
+
+input {
+    margin-left: 3%;
+}
+
+input[type="text"] {
+    padding: 4px;
+}
+
+a.link {
+    font-size: 150%;
+    font-weight: 700;
+    color: navy; /* Цвет текста */
+    font-family: monospace; /* Моноширинный шрифт */
+    quotes: "<" ">"; /* Устанавливаем вид кавычек */
+}
+a.link::before {
+    content: open-quote; /* Добавляем перед текстом открывающую кавычку */
+}
+a.link::after {
+    content: close-quote; /* Добавляем после текста закрывающую кавычку */
+}
+
+.GeneratedMarquee {
+    font-size:150%;
+    line-height:1.3em;
+    padding:2px;
+}
