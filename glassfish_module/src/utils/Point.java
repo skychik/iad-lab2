@@ -1,5 +1,6 @@
+package utils;
+
 import java.io.Serializable;
-import java.util.Map;
 
 public class Point implements Serializable {
 	private final Double x;

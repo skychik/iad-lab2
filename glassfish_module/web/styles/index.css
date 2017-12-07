@@ -20,6 +20,11 @@ td.left_align {
     text-align: left;
 }
 
+td.warning {
+    text-align: left;
+    color: #c80000;
+}
+
 td > img {
     margin-top: 2%;
     margin-bottom: 2%;

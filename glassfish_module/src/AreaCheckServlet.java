@@ -1,3 +1,5 @@
+import utils.Point;
+
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,10 +13,10 @@ import static java.lang.Math.pow;
 public class AreaCheckServlet extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		HttpSession session = request.getSession(true);
-		ArrayList<Point> points = (ArrayList<Point>)session.getAttribute(session.getId());
+		ArrayList<Point> points = (ArrayList<Point>)session.getAttribute("points");
 		if (points == null) {
 			points = new ArrayList<>();
-			session.setAttribute(session.getId(), points);
+			session.setAttribute("points", points);
 		}
 
 		// время начала работы скрипта
@@ -62,7 +64,7 @@ public class AreaCheckServlet extends HttpServlet {
 //		        "\t\t\tDone in " + timer.finish() + "milliseconds\n" +
 //		        "\t\t</h5>\n" +
 		        "\t\t\t<table>\n" +
-		        "\t\t\t\t<tr><td>№</td><td>X</td><td>Y</td><td>R</td></tr>\n");
+		        "\t\t\t\t<tr><td>No.</td><td>X</td><td>Y</td><td>R</td></tr>\n");
         for (int i = 0; i < points.size(); i++) {
 	        out.print(
 	        	"\t\t\t\t<tr><td>" + (i + 1) + ":</td><td>" + points.get(i).getX() + "</td><td>" +
